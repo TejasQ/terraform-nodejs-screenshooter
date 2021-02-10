@@ -1,0 +1,23 @@
+{
+  "name": "lambda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf out && webpack && cd out; zip -r ../../bundle.zip index.js"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^8.0.16",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.2.0-dev.20210209",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2",
+    "@types/aws-lambda": "^8.10.71"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^5.2.1",
+    "puppeteer-core": "5.2.1"
+  }
+}
